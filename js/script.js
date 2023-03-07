@@ -21,11 +21,11 @@ function inputCheck(value){
 function passwordGenerating(){
     var userName = prompt("Please insert your first name");
     let errorMessage = "Ma che stai a scrive??"
-    if (inputCheck(userName) == true){
+    if (inputCheck(userName)){
         var userLName = prompt("Please insert your last name");
-        if (inputCheck(userLName) == true){
+        if (inputCheck(userLName)){
             var userColor = prompt("Please insert your favorite color");
-            if (inputCheck(userColor) == true){
+            if (inputCheck(userColor)){
                 let randomNumber = getRandomInt(1000)
                 document.getElementById("password").innerHTML = userName+userLName+userColor+randomNumber
             }else{
