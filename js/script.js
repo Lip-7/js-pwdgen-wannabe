@@ -50,12 +50,12 @@ function passwordGenerating2(){
     var userLName = prompt("Please insert your last name");
     while (!inputCheck(userLName)){
         alert(errorMessage)
-        var userLName = prompt("Please insert your first name");
+        var userLName = prompt("Please insert your last name");
     }
     var userColor = prompt("Please insert your favorite color");
     while (!inputCheck(userColor)){
         alert(errorMessage)
-        var userColor = prompt("Please insert your first name");
+        var userColor = prompt("Please insert your favorite color");
     }
     let randomNumber = getRandomInt(1000)
     document.getElementById("password").innerHTML = userName+userLName+userColor+randomNumber
