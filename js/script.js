@@ -38,3 +38,25 @@ function passwordGenerating(){
         alert(errorMessage)
     }
 };
+
+
+function passwordGenerating2(){
+    let errorMessage = "wtf bro, what are u writing?"
+    var userName = prompt("Please insert your first name");
+    while (!inputCheck(userName)){
+        alert(errorMessage)
+        var userName = prompt("Please insert your first name");
+    }
+    var userLName = prompt("Please insert your last name");
+    while (!inputCheck(userLName)){
+        alert(errorMessage)
+        var userLName = prompt("Please insert your first name");
+    }
+    var userColor = prompt("Please insert your favorite color");
+    while (!inputCheck(userColor)){
+        alert(errorMessage)
+        var userColor = prompt("Please insert your first name");
+    }
+    let randomNumber = getRandomInt(1000)
+    document.getElementById("password").innerHTML = userName+userLName+userColor+randomNumber
+};
