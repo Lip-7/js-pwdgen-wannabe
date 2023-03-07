@@ -59,8 +59,8 @@ h1{
     gap: 20px;
 }
 #password{
-color: #FFFFFF;
-cursor: copy;
+    color: #FFFFFF;
+    cursor: copy;
 }
 a{
     text-decoration: none;
@@ -76,6 +76,10 @@ button{
     opacity: 1;
     transition: all 0.5s;
 }
+button.reset{
+    padding: 5px 10px;
+    border-radius: 2px;
+}
 button.copy{
     position: absolute;
     top: 3px;
@@ -84,4 +88,7 @@ button.copy{
 }
 button.copy:hover{
     opacity: 1;
+}
+button:hover{
+    background-color: aliceblue;
 }
